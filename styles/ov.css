@@ -1,0 +1,122 @@
+.overlayi {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.0);
+    z-index: 10;
+}
+
+#spinner {
+         position: fixed;
+         left: 0px;
+         top: 0px;
+         width: 100%;
+         height: 100%;
+         z-index: 9999;
+         background: url(478.gif) 50% 50% no-repeat #ffffff;
+         }
+
+.hoverlayi {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 10;
+}
+
+
+/* just some content with arbitrary styles for explanation purposes */
+.modali {
+    color: #0182AC;
+    width: 500px;
+    height: 230px;
+    position: absolute;
+    background:rgba(254,254,254,0.85) center center no-repeat;
+    border-radius: 5px;
+    text-align: right;
+    text-align: bottom;
+    z-index: 11; /* 1px higher than the overlay layer */
+}
+
+.modalir {
+    color: #0182AC;
+    width: 600px;
+    height: 370px;
+    position: absolute;
+    background:rgba(254,254,254,0.85) center center no-repeat;
+    border-radius: 5px;
+    text-align: right;
+    text-align: bottom;
+    z-index: 11; /* 1px higher than the overlay layer */
+}
+
+#lif{
+    color: #0182AC;
+    position: absolute;
+    bottom: 0px;
+    right: 5%;
+    text-align: right;
+    float: right;
+    margin: 20px;
+    bottom: 50px;
+}
+
+#rlif{
+    color: #0182AC;
+    position: absolute;
+    bottom: 0px;
+    right: 5%;
+    text-align: right;
+    float: right;
+    margin: 20px;
+    bottom: 20px;
+}
+
+#logo{
+    position: relative;
+    left: 5%;
+    float: left;
+    width: 130px;
+    height: 130px;
+    margin: 20px;
+    bottom: 50px;
+}
+
+input{
+    margin-left: 10px;
+    margin-top: 2px;
+}
+
+input#go{
+    cursor:pointer; 
+    padding:2px 2px; 
+    background:#0182AC; 
+    border:1px solid #33842a; 
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 0 4px rgba(0,0,0, .75);
+    -moz-box-shadow: 0 0 4px rgba(0,0,0, .75);
+    box-shadow: 0 0 4px rgba(0,0,0, .75);
+    color:#f3f3f3;
+    font-size:1.0em;
+}
+    input#go:hover, input#go:focus{
+    background-color :#0182DD; 
+    -webkit-box-shadow: 0 0 1px rgba(0,0,0, .85);
+    -moz-box-shadow: 0 0 1px rgba(0,0,0, .85);
+    box-shadow: 0 0 1px rgba(0,0,0, .85);
+}
+
+#navi{
+    bottom: 0px;
+    position: absolute;
+    text-align: center;
+    margin: 0px auto;
+    width: 100%;
+    margin-bottom:3px;
+}

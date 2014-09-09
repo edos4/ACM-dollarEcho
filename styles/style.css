@@ -5,69 +5,67 @@ body {
 	background-attachment: fixed;
 	background-color: #0182AC;
 	font-family: "MV Boli";
-	
 }
 
-#info{
-	color:#0182AC;
+#info {
+	color: #0182AC;
 	position: absolute;
 	margin-left: -100px;
 }
 
-#infoa{
-	color:#0182AC;
+#infoa {
+	color: #0182AC;
 	position: absolute;
 	margin-left: 300px;
 }
 
-#logo{
+#logo {
 	width: 100%;
 	height: 100px;
 }
-#hlogo{
+
+#hlogo {
 	width: 100%;
 	height: 100px;
 	z-index: 50;
 }
 
 #cnt {
-	width:60%;
-	margin:0px auto;
+	width: 60%;
+	margin: 0px auto;
 }
 
 .header {
-	height:130px;
-	background:#FFF;
-	width:60%;
-	margin:0px auto;
+	height: 130px;
+	background: #FFF;
+	width: 60%;
+	margin: 0px auto;
 }
 
 .hheader {
-	height:130px;
-	background:#FFF;
-	width:60%;
-	margin:0px auto;
+	height: 130px;
+	background: #FFF;
+	width: 60%;
+	margin: 0px auto;
 	z-index: 50;
 }
 
-.headera{
-	height:130px;
-	background:#FFF;
-	width:60%;
-	margin:0px auto;
+.headera {
+	height: 130px;
+	background: #FFF;
+	width: 60%;
+	margin: 0px auto;
 }
 
 a:link {
 	text-decoration: none;
 }
 
-
 .loginform {
 	margin-top: 10%;
 	margin-left: 50%;
 	z-index: -1;
 }
-
 
 .loginform form a {
 	color: #000;
@@ -79,16 +77,13 @@ a:link {
 	amargin-left: 28%;
 }
 
-
-.hinput{
+.hinput {
 	background-color: #36422C;
 	color: #000;
 	outline: none;
 	font-family: "MV Boli";
 	border: 0px;
 }
-
-
 
 .logout {
 	margin-top: -2%;
@@ -97,13 +92,14 @@ a:link {
 	font-size: 14px;
 }
 
-table{
-color: #000;
+table {
+	color: #000;
 }
 
-textarea:focus, input:focus{
-    outline: none;
+textarea:focus, input:focus {
+	outline: none;
 }
-input:focus{
-outline:none;
+
+input:focus {
+	outline: none;
 }

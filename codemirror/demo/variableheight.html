@@ -1,7 +1,7 @@
 <!doctype html>
 
 <title>CodeMirror: Variable Height Demo</title>
-<meta charset="utf-8"/>
+<meta charset="utf-8" />
 <link rel=stylesheet href="../doc/docs.css">
 
 <link rel="stylesheet" href="../lib/codemirror.css">
@@ -9,26 +9,37 @@
 <script src="../mode/markdown/markdown.js"></script>
 <script src="../mode/xml/xml.js"></script>
 <style type="text/css">
-      .CodeMirror {border: 1px solid silver; border-width: 1px 2px; }
-      .cm-header { font-size: 150%; font-family: arial; }
-      .cm-strong { font-size: 140%; }
-    </style>
-<div id=nav>
-  <a href="http://codemirror.net"><img id=logo src="../doc/logo.png"></a>
+.CodeMirror {
+	border: 1px solid silver;
+	border-width: 1px 2px;
+}
 
-  <ul>
-    <li><a href="../index.html">Home</a>
-    <li><a href="../doc/manual.html">Manual</a>
-    <li><a href="https://github.com/marijnh/codemirror">Code</a>
-  </ul>
-  <ul>
-    <li><a class=active href="#">Variable Height</a>
-  </ul>
+.cm-header {
+	font-size: 150%;
+	font-family: arial;
+}
+
+.cm-strong {
+	font-size: 140%;
+}
+</style>
+<div id=nav>
+	<a href="http://codemirror.net"><img id=logo src="../doc/logo.png"></a>
+
+	<ul>
+		<li><a href="../index.html">Home</a>
+		<li><a href="../doc/manual.html">Manual</a>
+		<li><a href="https://github.com/marijnh/codemirror">Code</a>
+	</ul>
+	<ul>
+		<li><a class=active href="#">Variable Height</a>
+	</ul>
 </div>
 
 <article>
-<h2>Variable Height Demo</h2>
-<form><textarea id="code" name="code"># A First Level Header
+	<h2>Variable Height Demo</h2>
+	<form>
+		<textarea id="code" name="code"># A First Level Header
 
 **Bold** text in a normal-size paragraph.
 
@@ -50,12 +61,13 @@ dog's back.
 > This is the second paragraph in the blockquote.
 >
 > ## This is an H2 in a blockquote       
-</textarea></form>
-    <script id="script">
+</textarea>
+	</form>
+	<script id="script">
       var editor = CodeMirror.fromTextArea(document.getElementById("code"), {
         lineNumbers: true,
         lineWrapping: true,
         mode: "markdown"
       });
     </script>
-  </article>
+</article>

@@ -2,12 +2,11 @@
 	HUNDREDS of other stylesheets which work with this class can be found here - http://icant.co.uk/csstablegallery
 	Try a few demos using the style dropdown box for our demo here - http://www.ajaxcrud.com/
 */
-
-.paging_links{
-	font-family:Verdana, Arial, Helvetica, sans-serif;
-	font-size:10px;
+.paging_links {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
 	/* color:#F5E000;*/
-	color:#445276;
+	color: #445276;
 }
 
 .ajaxCRUD {
@@ -15,60 +14,61 @@
 	border-color: #BBB1ED;
 	border-style: solid;
 	border-width: 0px;
-	padding:4px;
-	border-collapse:collapse;
-	margin-top:10px;
-	margin-bottom:10px;
+	padding: 4px;
+	border-collapse: collapse;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 
-.ajaxCRUD th{
+.ajaxCRUD th {
 	background: #CFDBF3;
 	font-weight: bold;
-	color:#445276;
+	color: #445276;
 	font-size: 12px;
 }
 
-.ajaxCRUD th a{
+.ajaxCRUD th a {
 	color: #173D7F;
 }
 
-.ajaxCRUD td a{
+.ajaxCRUD td a {
 	border-bottom: 1px dotted #ba0000;
 	font-size: 11px;
 	text-decoration: none;
 }
 
-.ajaxCRUD td a:hover{
+.ajaxCRUD td a:hover {
 	color: #000;
 	border-bottom: 1px solid #ba0000;
 }
 
-.ajaxCRUD td{
+.ajaxCRUD td {
 	font-family: Arial, Verdana;
 	font-size: 11px;
 	background: #F9F8FB;
 	color: #716E6E;
-	font-weight:normal;
+	font-weight: normal;
 	/* text-align: center; */
 	vertical-align: middle;
 }
 
-.ajaxCRUD td, .ajaxCRUD th{
+.ajaxCRUD td, .ajaxCRUD th {
 	padding: 5px 5px;
 }
-table td.odd, table tr.odd, tr.odd td, tbody tr.odd th{
+
+table td.odd, table tr.odd, tr.odd td, tbody tr.odd th {
 	background-color: #979797;
 }
 
-.editingSize{
+.editingSize {
 	font-size: 10px;
 }
 
-.vertical, .vertical td, .vertical th{
-	text-align:left;
+.vertical, .vertical td, .vertical th {
+	text-align: left;
 }
 
-input, select, textarea{
+input, select, textarea {
 	font-size: 100%;
 	border-top: 1px solid #7c7c7c;
 	border-left: 1px solid #c3c3c3;
@@ -79,9 +79,10 @@ input, select, textarea{
 	padding: 2px 0 2px 2px;
 }
 
-.btn{
+.btn {
 	font-size: 11px;
 }
+
 .report {
 	text-align: left;
 	border-top: 1px solid #9c9;

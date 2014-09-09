@@ -1,18 +1,27 @@
-
-
-
-
 /* Z-INDEX */
- .formError { z-index: 990; }
-    .formError .formErrorContent { z-index: 991; }
-    .formError .formErrorArrow { z-index: 996; }
-    
-    .formErrorInsideDialog.formError { z-index: 5000; }
-    .formErrorInsideDialog.formError .formErrorContent { z-index: 5001; }
-    .formErrorInsideDialog.formError .formErrorArrow { z-index: 5006; }
+.formError {
+	z-index: 990;
+}
 
+.formError .formErrorContent {
+	z-index: 991;
+}
 
+.formError .formErrorArrow {
+	z-index: 996;
+}
 
+.formErrorInsideDialog.formError {
+	z-index: 5000;
+}
+
+.formErrorInsideDialog.formError .formErrorContent {
+	z-index: 5001;
+}
+
+.formErrorInsideDialog.formError .formErrorArrow {
+	z-index: 5006;
+}
 
 .inputContainer {
 	position: relative;
@@ -37,7 +46,7 @@
 .formError .formErrorContent {
 	width: 100%;
 	background: #ee0101;
-	position:relative;
+	position: relative;
 	color: #fff;
 	width: 150px;
 	font-size: 11px;
@@ -63,10 +72,11 @@
 .formError .formErrorArrow {
 	width: 15px;
 	margin: -2px 0 0 13px;
-	position:relative;
+	position: relative;
 }
-body[dir='rtl'] .formError .formErrorArrow,
-body.rtl .formError .formErrorArrow {
+
+body[dir='rtl'] .formError .formErrorArrow, body.rtl .formError .formErrorArrow
+	{
 	margin: -2px 13px 0 0;
 }
 
@@ -75,7 +85,7 @@ body.rtl .formError .formErrorArrow {
 	-moz-box-shadow: none;
 	-webkit-box-shadow: none;
 	margin: 0px 0 0 12px;
-	top:2px;
+	top: 2px;
 }
 
 .formError .formErrorArrow div {

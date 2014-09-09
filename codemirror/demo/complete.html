@@ -1,7 +1,7 @@
 <!doctype html>
 
 <title>CodeMirror: Autocomplete Demo</title>
-<meta charset="utf-8"/>
+<meta charset="utf-8" />
 <link rel=stylesheet href="../doc/docs.css">
 
 <link rel="stylesheet" href="../lib/codemirror.css">
@@ -11,21 +11,22 @@
 <script src="../addon/hint/javascript-hint.js"></script>
 <script src="../mode/javascript/javascript.js"></script>
 <div id=nav>
-  <a href="http://codemirror.net"><img id=logo src="../doc/logo.png"></a>
+	<a href="http://codemirror.net"><img id=logo src="../doc/logo.png"></a>
 
-  <ul>
-    <li><a href="../index.html">Home</a>
-    <li><a href="../doc/manual.html">Manual</a>
-    <li><a href="https://github.com/marijnh/codemirror">Code</a>
-  </ul>
-  <ul>
-    <li><a class=active href="#">Autocomplete</a>
-  </ul>
+	<ul>
+		<li><a href="../index.html">Home</a>
+		<li><a href="../doc/manual.html">Manual</a>
+		<li><a href="https://github.com/marijnh/codemirror">Code</a>
+	</ul>
+	<ul>
+		<li><a class=active href="#">Autocomplete</a>
+	</ul>
 </div>
 
 <article>
-<h2>Autocomplete Demo</h2>
-<form><textarea id="code" name="code">
+	<h2>Autocomplete Demo</h2>
+	<form>
+		<textarea id="code" name="code">
 function getCompletions(token, context) {
   var found = [], start = token.string;
   function maybeAdd(str) {
@@ -61,14 +62,17 @@ function getCompletions(token, context) {
   }
   return found;
 }
-</textarea></form>
+</textarea>
+	</form>
 
-<p>Press <strong>ctrl-space</strong> to activate autocompletion. Built
-on top of the <a href="../doc/manual.html#addon_show-hint"><code>show-hint</code></a>
-and <a href="../doc/manual.html#addon_javascript-hint"><code>javascript-hint</code></a>
-addons.</p>
+	<p>
+		Press <strong>ctrl-space</strong> to activate autocompletion. Built on
+		top of the <a href="../doc/manual.html#addon_show-hint"><code>show-hint</code></a>
+		and <a href="../doc/manual.html#addon_javascript-hint"><code>javascript-hint</code></a>
+		addons.
+	</p>
 
-    <script>
+	<script>
       CodeMirror.commands.autocomplete = function(cm) {
         CodeMirror.showHint(cm, CodeMirror.hint.javascript);
       };
@@ -77,4 +81,4 @@ addons.</p>
         extraKeys: {"Ctrl-Space": "autocomplete"}
       });
     </script>
-  </article>
+</article>

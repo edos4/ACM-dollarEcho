@@ -2,7 +2,6 @@
 	Cusco Sky table styles
 	written by Braulio Soncco http://www.buayacorp.com
 */
-
 table, th, td {
 	border: 1px solid #D4E0EE;
 	border-collapse: collapse;
@@ -31,9 +30,13 @@ tbody th {
 	font-weight: bold;
 }
 
-tbody tr { background: #FCFDFE; }
+tbody tr {
+	background: #FCFDFE;
+}
 
-tbody tr.odd { background: #F7F9FC; }
+tbody tr.odd {
+	background: #F7F9FC;
+}
 
 table a:link {
 	color: #718ABE;

@@ -31,7 +31,6 @@
  *   MISC                  Minor misc styles
  */
 
-
 /*
  * CONTAINER
  * TableTools container element and styles applying to all components
@@ -53,12 +52,10 @@ div.DTTT_container {
 	*cursor: hand;
 }
 
-.DTTT_button::-moz-focus-inner { 
+.DTTT_button::-moz-focus-inner {
 	border: none !important;
 	padding: 0;
 }
-
-
 
 /*
  * SELECTING
@@ -85,7 +82,6 @@ table.dataTable tr.DTTT_selected.odd td.sorting_3 {
 	background-color: #9FAFD1;
 }
 
-
 table.dataTable tr.DTTT_selected.even {
 	background-color: #B0BED9;
 }
@@ -102,18 +98,15 @@ table.dataTable tr.DTTT_selected.even td.sorting_3 {
 	background-color: #B0BED9;
 }
 
-
 /*
  * COLLECTIONS
  * Drop down list (collection) styles
  */
-
 div.DTTT_collection {
 	width: 150px;
 	background-color: #f3f3f3;
 	overflow: hidden;
 	z-index: 2002;
-	
 	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 	-moz-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 	-webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
@@ -124,20 +117,17 @@ div.DTTT_collection_background {
 	z-index: 2001;
 }
 
-div.DTTT_collection button.DTTT_button,
-div.DTTT_collection div.DTTT_button,
-div.DTTT_collection a.DTTT_button {
+div.DTTT_collection button.DTTT_button, div.DTTT_collection div.DTTT_button,
+	div.DTTT_collection a.DTTT_button {
 	float: none;
 	width: 100%;
 	margin-bottom: -0.1em;
 }
 
-
 /*
  * PRINTING
  * Print display styles
  */
-
 .DTTT_print_info {
 	position: absolute;
 	top: 50%;
@@ -150,13 +140,10 @@ div.DTTT_collection a.DTTT_button {
 	background-color: #3f3f3f;
 	color: white;
 	padding: 10px 30px;
-	
 	opacity: 0.9;
-	
 	border-radius: 5px;
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
-	
 	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 	-moz-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 	-webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
@@ -174,12 +161,10 @@ div.DTTT_collection a.DTTT_button {
 	line-height: 20px;
 }
 
-
 /*
  * MISC
  * Minor misc styles
  */
-
 .DTTT_disabled {
 	color: #999;
 }

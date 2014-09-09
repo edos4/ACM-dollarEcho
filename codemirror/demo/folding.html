@@ -1,7 +1,7 @@
 <!doctype html>
 
 <title>CodeMirror: Code Folding Demo</title>
-<meta charset="utf-8"/>
+<meta charset="utf-8" />
 <link rel=stylesheet href="../doc/docs.css">
 
 <link rel="stylesheet" href="../lib/codemirror.css">
@@ -15,28 +15,37 @@
 <script src="../mode/javascript/javascript.js"></script>
 <script src="../mode/xml/xml.js"></script>
 <style type="text/css">
-      .CodeMirror {border-top: 1px solid black; border-bottom: 1px solid black;}
+.CodeMirror {
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+}
 </style>
 <div id=nav>
-  <a href="http://codemirror.net"><img id=logo src="../doc/logo.png"></a>
+	<a href="http://codemirror.net"><img id=logo src="../doc/logo.png"></a>
 
-  <ul>
-    <li><a href="../index.html">Home</a>
-    <li><a href="../doc/manual.html">Manual</a>
-    <li><a href="https://github.com/marijnh/codemirror">Code</a>
-  </ul>
-  <ul>
-    <li><a class=active href="#">Code Folding</a>
-  </ul>
+	<ul>
+		<li><a href="../index.html">Home</a>
+		<li><a href="../doc/manual.html">Manual</a>
+		<li><a href="https://github.com/marijnh/codemirror">Code</a>
+	</ul>
+	<ul>
+		<li><a class=active href="#">Code Folding</a>
+	</ul>
 </div>
 
 <article>
-<h2>Code Folding Demo</h2>
-<form>
-      <div style="max-width: 50em; margin-bottom: 1em">JavaScript:<br><textarea id="code" name="code"></textarea></div>
-      <div style="max-width: 50em">HTML:<br><textarea id="code-html" name="code-html"></textarea></div>
-    </form>
-    <script id="script">
+	<h2>Code Folding Demo</h2>
+	<form>
+		<div style="max-width: 50em; margin-bottom: 1em">
+			JavaScript:<br>
+			<textarea id="code" name="code"></textarea>
+		</div>
+		<div style="max-width: 50em">
+			HTML:<br>
+			<textarea id="code-html" name="code-html"></textarea>
+		</div>
+	</form>
+	<script id="script">
 /*
  * Demonstration of code folding
  */
@@ -72,4 +81,4 @@ window.onload = function() {
   editor_html.foldCode(CodeMirror.Pos(1, 0));
 };
 </script>
-  </article>
+</article>

@@ -1,7 +1,7 @@
 <!doctype html>
 
 <title>CodeMirror: OCaml mode</title>
-<meta charset="utf-8"/>
+<meta charset="utf-8" />
 <link rel=stylesheet href="../../doc/docs.css">
 
 <link rel=stylesheet href=../../lib/codemirror.css>
@@ -9,27 +9,31 @@
 <script src=../../addon/edit/matchbrackets.js></script>
 <script src=ocaml.js></script>
 <style type=text/css>
-  .CodeMirror {border-top: 1px solid black; border-bottom: 1px solid black;}
+.CodeMirror {
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+}
 </style>
 <div id=nav>
-  <a href="http://codemirror.net"><img id=logo src="../../doc/logo.png"></a>
+	<a href="http://codemirror.net"><img id=logo
+		src="../../doc/logo.png"></a>
 
-  <ul>
-    <li><a href="../../index.html">Home</a>
-    <li><a href="../../doc/manual.html">Manual</a>
-    <li><a href="https://github.com/marijnh/codemirror">Code</a>
-  </ul>
-  <ul>
-    <li><a href="../index.html">Language modes</a>
-    <li><a class=active href="#">OCaml</a>
-  </ul>
+	<ul>
+		<li><a href="../../index.html">Home</a>
+		<li><a href="../../doc/manual.html">Manual</a>
+		<li><a href="https://github.com/marijnh/codemirror">Code</a>
+	</ul>
+	<ul>
+		<li><a href="../index.html">Language modes</a>
+		<li><a class=active href="#">OCaml</a>
+	</ul>
 </div>
 
 <article>
-<h2>OCaml mode</h2>
+	<h2>OCaml mode</h2>
 
 
-<textarea id=code>
+	<textarea id=code>
 (* Summing a list of integers *)
 let rec sum xs =
   match xs with
@@ -134,7 +138,7 @@ let () =
 (* OCaml page on Wikipedia - http://en.wikipedia.org/wiki/OCaml *)
 </textarea>
 
-<script>
+	<script>
   var editor = CodeMirror.fromTextArea(document.getElementById('code'), {
     mode: 'ocaml',
     lineNumbers: true,
@@ -142,5 +146,9 @@ let () =
   });
 </script>
 
-<p><strong>MIME types defined:</strong> <code>text/x-ocaml</code>.</p>
+	<p>
+		<strong>MIME types defined:</strong>
+		<code>text/x-ocaml</code>
+		.
+	</p>
 </article>

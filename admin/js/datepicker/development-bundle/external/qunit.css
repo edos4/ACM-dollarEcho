@@ -7,14 +7,14 @@
  * Dual licensed under the MIT (MIT-LICENSE.txt)
  * or GPL (GPL-LICENSE.txt) licenses.
  */ /** Font Family and Sizes */
-#qunit-tests,#qunit-header,#qunit-banner,#qunit-testrunner-toolbar,#qunit-userAgent,#qunit-testresult
-	{
+#qunit-tests, #qunit-header, #qunit-banner, #qunit-testrunner-toolbar,
+	#qunit-userAgent, #qunit-testresult {
 	font-family: "Helvetica Neue Light", "HelveticaNeue-Light",
 		"Helvetica Neue", Calibri, Helvetica, Arial, sans-serif;
 }
 
-#qunit-testrunner-toolbar,#qunit-userAgent,#qunit-testresult,#qunit-tests li
-	{
+#qunit-testrunner-toolbar, #qunit-userAgent, #qunit-testresult,
+	#qunit-tests li {
 	font-size: small;
 }
 
@@ -23,8 +23,8 @@
 }
 
 /** Resets */
-#qunit-tests,#qunit-tests ol,#qunit-header,#qunit-banner,#qunit-userAgent,#qunit-testresult
-	{
+#qunit-tests, #qunit-tests ol, #qunit-header, #qunit-banner,
+	#qunit-userAgent, #qunit-testresult {
 	margin: 0;
 	padding: 0;
 }
@@ -48,7 +48,7 @@
 	color: #c2ccd1;
 }
 
-#qunit-header a:hover,#qunit-header a:focus {
+#qunit-header a:hover, #qunit-header a:focus {
 	color: #fff;
 }
 
@@ -80,7 +80,7 @@
 	list-style-position: inside;
 }
 
-#qunit-tests.hidepass li.pass,#qunit-tests.hidepass li.running {
+#qunit-tests.hidepass li.pass, #qunit-tests.hidepass li.running {
 	display: none;
 }
 
@@ -94,7 +94,7 @@
 	text-decoration: none;
 }
 
-#qunit-tests li a:hover,#qunit-tests li a:focus {
+#qunit-tests li a:hover, #qunit-tests li a:focus {
 	color: #000;
 }
 
@@ -180,7 +180,7 @@
 	color: #366097;
 }
 
-#qunit-tests .pass .test-actual,#qunit-tests .pass .test-expected {
+#qunit-tests .pass .test-actual, #qunit-tests .pass .test-expected {
 	color: #999999;
 }
 
@@ -207,7 +207,7 @@
 	background-color: #EE5757;
 }
 
-#qunit-tests .fail .test-name,#qunit-tests .fail .module-name {
+#qunit-tests .fail .test-name, #qunit-tests .fail .module-name {
 	color: #000000;
 }
 

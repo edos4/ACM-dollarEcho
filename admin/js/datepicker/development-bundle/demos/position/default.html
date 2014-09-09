@@ -32,7 +32,7 @@ div.positionable {
 	text-align: center;
 }
 
-select,input {
+select, input {
 	margin-left: 15px;
 }
 </style>
@@ -62,66 +62,73 @@ select,input {
 </head>
 <body>
 
-<div class="demo">
+	<div class="demo">
 
-<div id="parent">
-<p>This is the position parent element.</p>
-</div>
+		<div id="parent">
+			<p>This is the position parent element.</p>
+		</div>
 
-<div class="positionable">
-<p>to position</p>
-</div>
+		<div class="positionable">
+			<p>to position</p>
+		</div>
 
-<div class="positionable" style="width: 120px; height: 40px;">
-<p>to position 2</p>
-</div>
+		<div class="positionable" style="width: 120px; height: 40px;">
+			<p>to position 2</p>
+		</div>
 
-<div style="padding: 20px; margin-top: 75px;">position...
-<div style="padding-bottom: 20px;"><b>my:</b> <select
-	id="my_horizontal">
-	<option value="left">left</option>
-	<option value="center">center</option>
-	<option value="right">right</option>
-</select> <select id="my_vertical">
-	<option value="top">top</option>
-	<option value="middle">center</option>
-	<option value="bottom">bottom</option>
-</select></div>
-<div style="padding-bottom: 20px;"><b>at:</b> <select
-	id="at_horizontal">
-	<option value="left">left</option>
-	<option value="center">center</option>
-	<option value="right">right</option>
-</select> <select id="at_vertical">
-	<option value="top">top</option>
-	<option value="middle">center</option>
-	<option value="bottom">bottom</option>
-</select></div>
-<div style="padding-bottom: 20px;"><b>offset:</b> <input
-	id="offset"></div>
-<div style="padding-bottom: 20px;"><b>collision:</b> <select
-	id="collision_horizontal">
-	<option value="flip">flip</option>
-	<option value="fit">fit</option>
-	<option value="none">none</option>
-</select> <select id="collision_vertical">
-	<option value="flip">flip</option>
-	<option value="fit">fit</option>
-	<option value="none">none</option>
-</select></div>
-</div>
+		<div style="padding: 20px; margin-top: 75px;">
+			position...
+			<div style="padding-bottom: 20px;">
+				<b>my:</b> <select id="my_horizontal">
+					<option value="left">left</option>
+					<option value="center">center</option>
+					<option value="right">right</option>
+				</select> <select id="my_vertical">
+					<option value="top">top</option>
+					<option value="middle">center</option>
+					<option value="bottom">bottom</option>
+				</select>
+			</div>
+			<div style="padding-bottom: 20px;">
+				<b>at:</b> <select id="at_horizontal">
+					<option value="left">left</option>
+					<option value="center">center</option>
+					<option value="right">right</option>
+				</select> <select id="at_vertical">
+					<option value="top">top</option>
+					<option value="middle">center</option>
+					<option value="bottom">bottom</option>
+				</select>
+			</div>
+			<div style="padding-bottom: 20px;">
+				<b>offset:</b> <input id="offset">
+			</div>
+			<div style="padding-bottom: 20px;">
+				<b>collision:</b> <select id="collision_horizontal">
+					<option value="flip">flip</option>
+					<option value="fit">fit</option>
+					<option value="none">none</option>
+				</select> <select id="collision_vertical">
+					<option value="flip">flip</option>
+					<option value="fit">fit</option>
+					<option value="none">none</option>
+				</select>
+			</div>
+		</div>
 
-</div>
-<!-- End demo -->
+	</div>
+	<!-- End demo -->
 
 
 
-<div class="demo-description">
-<p>Use the form controls to configure the positioning, or drag the
-positioned element to modify its offset. <br />
-Drag around the parent element to see collision detection in action.</p>
-</div>
-<!-- End demo-description -->
+	<div class="demo-description">
+		<p>
+			Use the form controls to configure the positioning, or drag the
+			positioned element to modify its offset. <br /> Drag around the
+			parent element to see collision detection in action.
+		</p>
+	</div>
+	<!-- End demo-description -->
 
 </body>
 </html>

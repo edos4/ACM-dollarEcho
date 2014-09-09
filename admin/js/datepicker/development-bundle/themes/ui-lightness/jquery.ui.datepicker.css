@@ -18,14 +18,14 @@
 	padding: .2em 0;
 }
 
-.ui-datepicker .ui-datepicker-prev,.ui-datepicker .ui-datepicker-next {
+.ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next {
 	position: absolute;
 	top: 2px;
 	width: 1.8em;
 	height: 1.8em;
 }
 
-.ui-datepicker .ui-datepicker-prev-hover,.ui-datepicker .ui-datepicker-next-hover
+.ui-datepicker .ui-datepicker-prev-hover, .ui-datepicker .ui-datepicker-next-hover
 	{
 	top: 1px;
 }
@@ -46,7 +46,7 @@
 	right: 1px;
 }
 
-.ui-datepicker .ui-datepicker-prev span,.ui-datepicker .ui-datepicker-next span
+.ui-datepicker .ui-datepicker-prev span, .ui-datepicker .ui-datepicker-next span
 	{
 	display: block;
 	position: absolute;
@@ -71,7 +71,7 @@
 	width: 100%;
 }
 
-.ui-datepicker select.ui-datepicker-month,.ui-datepicker select.ui-datepicker-year
+.ui-datepicker select.ui-datepicker-month, .ui-datepicker select.ui-datepicker-year
 	{
 	width: 49%;
 }
@@ -95,7 +95,7 @@
 	padding: 1px;
 }
 
-.ui-datepicker td span,.ui-datepicker td a {
+.ui-datepicker td span, .ui-datepicker td a {
 	display: block;
 	padding: .2em;
 	text-align: right;

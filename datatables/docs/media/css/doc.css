@@ -4,16 +4,46 @@ Code licensed under the BSD License:
 http://developer.yahoo.net/yui/license.txt
 version: 0.12.0
 */
-body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{margin:0;padding:0;}
-table{border-collapse:collapse;border-spacing:0;}
-fieldset,img{border:0;}
-address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal;}
-ol,ul {list-style:none;}
-caption,th {text-align:left;}
-h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}
-q:before,q:after{content:'';}
-abbr,acronym {border:0;}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form,
+	fieldset, input, textarea, p, blockquote, th, td {
+	margin: 0;
+	padding: 0;
+}
 
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+fieldset, img {
+	border: 0;
+}
+
+address, caption, cite, code, dfn, em, strong, th, var {
+	font-style: normal;
+	font-weight: normal;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+caption, th {
+	text-align: left;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-size: 100%;
+	font-weight: normal;
+}
+
+q:before, q:after {
+	content: '';
+}
+
+abbr, acronym {
+	border: 0;
+}
 
 html, body {
 	margin: 0;
@@ -42,9 +72,6 @@ div.fw_footer {
 	font-size: 75%;
 	text-align: center;
 }
-
-
-
 
 .type-attr .type-signature {
 	background-color: #ccc;
@@ -83,6 +110,7 @@ div.fw_footer {
 .example-code {
 	margin-left: 30px;
 }
+
 .example-code td.code {
 	border-top: 1px solid #4E6CA3 !important;
 }
@@ -119,20 +147,19 @@ div.doc_overview dd, div.doc_overview dt {
 	padding-left: 0 !important;
 }
 
-
-
 .right_border div {
 	width: 20px;
 	padding: 2px 0.5em 2px 1em;
 	text-align: right;
 }
+
 .right_border {
 	border-right: 3px solid #4E6CA3;
 }
+
 .bottom_border {
 	border-bottom: 1px solid #4E6CA3;
 }
-
 
 a {
 	text-decoration: none;
@@ -165,7 +192,6 @@ h3 {
 	padding-left: 5px;
 }
 */
-
 h1 {
 	font-size: 2em;
 }
@@ -215,8 +241,7 @@ table.params {
 	width: 97%;
 }
 
-table.params th,
-table.params td {
+table.params th, table.params td {
 	padding: 3px;
 }
 
@@ -228,8 +253,7 @@ tr.even {
 	background-color: #F8F8F8;
 }
 
-th.name,
-td.name {
+th.name, td.name {
 	padding-left: 13px;
 }
 
@@ -264,25 +288,21 @@ div.page-info {
 	right: 0;
 }
 
-
 .private {
 	display: none;
 }
-
 
 code {
 	font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
 	padding: 2px 4px !important;
 	white-space: pre;
 	font-size: 0.9em;
-
 	color: #D14;
 	background-color: #F7F7F9;
-
 	border: 1px solid #E1E1E8;
 	-webkit-border-radius: 3px;
-	   -moz-border-radius: 3px;
-	        border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
 }
 
 pre {
@@ -311,8 +331,6 @@ ol {
 	list-style-position: outside;
 	padding-left: 30px;
 }
-
-
 
 div.fw_nav {
 	position: fixed;
@@ -356,12 +374,6 @@ div.fw_nav li {
 div.fw_nav li>a {
 	font-weight: bold;
 }
-
-
-
-
-
-
 
 .css_clear {
 	clear: both;

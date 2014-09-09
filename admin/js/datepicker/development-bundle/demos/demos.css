@@ -42,7 +42,7 @@ body {
 
 /* Normal
    -------------------------------- */
-.normal h3,.normal h4 {
+.normal h3, .normal h4 {
 	margin: 0;
 	font-weight: normal;
 }
@@ -64,7 +64,7 @@ body {
 }
 
 /* Demos */
-.demos-nav,.demos-nav dt,.demos-nav dd,.demos-nav ul,.demos-nav li {
+.demos-nav, .demos-nav dt, .demos-nav dd, .demos-nav ul, .demos-nav li {
 	margin: 0;
 	padding: 0
 }
@@ -75,7 +75,7 @@ body {
 	font-size: 1.3em;
 }
 
-.demos-nav dt,.demos-nav h4 {
+.demos-nav dt, .demos-nav h4 {
 	margin: 0;
 	padding: 0;
 	font: normal 1.1em "Trebuchet MS", "Helvetica", "Arial", "Verdana",
@@ -83,7 +83,7 @@ body {
 	color: #e87b10;
 }
 
-.demos-nav dt,.demos-nav h4 {
+.demos-nav dt, .demos-nav h4 {
 	margin-top: 1.5em;
 	margin-bottom: 0;
 	padding-left: 8px;
@@ -92,7 +92,7 @@ body {
 	border-bottom: 1px solid #F4F4F4;
 }
 
-.demos-nav dd a,.demos-nav li a {
+.demos-nav dd a, .demos-nav li a {
 	border-bottom: 1px solid #F4F4F4;
 	display: block;
 	padding: 4px 3px 4px 8px;
@@ -103,8 +103,8 @@ body {
 	height: 13px;
 }
 
-.demos-nav dd a:hover,.demos-nav dd a:focus,.demos-nav dd a:hover,.demos-nav dd a:focus
-	{
+.demos-nav dd a:hover, .demos-nav dd a:focus, .demos-nav dd a:hover,
+	.demos-nav dd a:focus {
 	background: #f3f3f3;
 	color: #000;
 	-moz-border-radius: 5px;
@@ -137,12 +137,12 @@ eventually we should convert the font sizes to ems -- using px for now to minimi
 	margin: 0;
 }
 
-.normal a:link,.normal a:visited {
+.normal a:link, .normal a:visited {
 	color: #1b75bb;
 	text-decoration: none;
 }
 
-.normal a:hover,.normal a:active {
+.normal a:hover, .normal a:active {
 	color: #0b559b;
 }
 
@@ -159,7 +159,7 @@ eventually we should convert the font sizes to ems -- using px for now to minimi
 	position: relative;
 }
 
-#demo-frame h3,#demo-frame h4 {
+#demo-frame h3, #demo-frame h4 {
 	padding: 0;
 	font-weight: bold;
 	font-size: 1em;
@@ -191,18 +191,18 @@ eventually we should convert the font sizes to ems -- using px for now to minimi
 	zoom: 1;
 }
 
-#demo-config-menu li a:link,#demo-config-menu li a:visited {
+#demo-config-menu li a:link, #demo-config-menu li a:visited {
 	display: block;
 	padding: 1px 8px 4px;
 	border-bottom: 1px dotted #b3b3b3;
 }
 
-* html #demo-config-menu li a:link,* html #demo-config-menu li a:visited
+* html #demo-config-menu li a:link, * html #demo-config-menu li a:visited
 	{
 	padding: 1px 8px 2px;
 }
 
-#demo-config-menu li a:hover,#demo-config-menu li a:active {
+#demo-config-menu li a:hover, #demo-config-menu li a:active {
 	background-color: #f6f6f6;
 }
 
@@ -210,7 +210,8 @@ eventually we should convert the font sizes to ems -- using px for now to minimi
 	background: url(images/demo-config-on-tile.gif) repeat-x left center;
 }
 
-#demo-config-menu li.demo-config-on a:link,#demo-config-menu li.demo-config-on a:visited,#demo-config-menu li.demo-config-on a:hover,#demo-config-menu li.demo-config-on a:active
+#demo-config-menu li.demo-config-on a:link, #demo-config-menu li.demo-config-on a:visited,
+	#demo-config-menu li.demo-config-on a:hover, #demo-config-menu li.demo-config-on a:active
 	{
 	background: url(images/demo-config-on.gif) no-repeat left;
 	padding-left: 18px;
@@ -221,7 +222,7 @@ eventually we should convert the font sizes to ems -- using px for now to minimi
 	margin-bottom: 0px;
 }
 
-#demo-source,#demo-notes {
+#demo-source, #demo-notes {
 	clear: both;
 	padding: 20px 0 0;
 	font-size: 1.3em;
@@ -233,35 +234,36 @@ eventually we should convert the font sizes to ems -- using px for now to minimi
 	font-size: 1em;
 }
 
-#demo-notes p code,.demo-description p code {
+#demo-notes p code, .demo-description p code {
 	padding: 0;
 	font-weight: bold;
 }
 
-#demo-source pre,#demo-source code {
+#demo-source pre, #demo-source code {
 	padding: 0;
 }
 
-code,pre {
+code, pre {
 	padding: 8px 0 8px 20px;
 	font-size: 1.2em;
 	line-height: 130%;
 }
 
-#demo-source a:link,#demo-source a:visited,#demo-source a:hover,#demo-source a:active
-	{
+#demo-source a:link, #demo-source a:visited, #demo-source a:hover,
+	#demo-source a:active {
 	font-size: 12px;
 	padding-left: 13px;
 	background-position: left center;
 	background-repeat: no-repeat;
 }
 
-#demo-source a.source-open:link,#demo-source a.source-open:visited,#demo-source a.source-open:hover,#demo-source a.source-open:active
-	{
+#demo-source a.source-open:link, #demo-source a.source-open:visited,
+	#demo-source a.source-open:hover, #demo-source a.source-open:active {
 	background-image: url(images/demo-spindown-open.gif);
 }
 
-#demo-source a.source-closed:link,#demo-source a.source-closed:visited,#demo-source a.source-closed:hover,#demo-source a.source-closed:active
+#demo-source a.source-closed:link, #demo-source a.source-closed:visited,
+	#demo-source a.source-closed:hover, #demo-source a.source-closed:active
 	{
 	background-image: url(images/demo-spindown-closed.gif);
 }
@@ -289,7 +291,7 @@ div.demo-description {
 	line-height: 1.4em;
 }
 
-.ui-draggable,.ui-droppable {
+.ui-draggable, .ui-droppable {
 	background-position: top left;
 }
 
@@ -316,8 +318,8 @@ div.demo-description {
 	font-size: 1em;
 }
 
-#widget-docs .ui-widget input,#widget-docs .ui-widget select,#widget-docs .ui-widget textarea,#widget-docs .ui-widget button
-	{
+#widget-docs .ui-widget input, #widget-docs .ui-widget select,
+	#widget-docs .ui-widget textarea, #widget-docs .ui-widget button {
 	font-family: Trebuchet MS, Verdana, Arial, sans-serif;
 	font-size: 1em;
 }
@@ -347,7 +349,7 @@ div.demo-description {
 
 /* Interaction states
 ----------------------------------*/
-#widget-docs .ui-state-default,#widget-docs .ui-widget-content #widget-docs .ui-state-default
+#widget-docs .ui-state-default, #widget-docs .ui-widget-content #widget-docs .ui-state-default
 	{
 	border: 1px solid #666666;
 	background: #555555
@@ -364,7 +366,8 @@ div.demo-description {
 	outline: none;
 }
 
-#widget-docs .ui-state-hover,#widget-docs .ui-widget-content #widget-docs .ui-state-hover,#widget-docs .ui-state-focus,#widget-docs .ui-widget-content #widget-docs .ui-state-focus
+#widget-docs .ui-state-hover, #widget-docs .ui-widget-content #widget-docs .ui-state-hover,
+	#widget-docs .ui-state-focus, #widget-docs .ui-widget-content #widget-docs .ui-state-focus
 	{
 	border: 1px solid #666666;
 	background: #444444
@@ -381,7 +384,7 @@ div.demo-description {
 	outline: none;
 }
 
-#widget-docs .ui-state-active,#widget-docs .ui-widget-content #widget-docs .ui-state-active
+#widget-docs .ui-state-active, #widget-docs .ui-widget-content #widget-docs .ui-state-active
 	{
 	border: 1px solid #666666;
 	background: #ffffff url(images/ffffff_40x100_textures_01_flat_65.png)
@@ -399,7 +402,7 @@ div.demo-description {
 
 /* Interaction Cues
 ----------------------------------*/
-#widget-docs .ui-state-highlight,#widget-docs .ui-widget-content #widget-docs .ui-state-highlight
+#widget-docs .ui-state-highlight, #widget-docs .ui-widget-content #widget-docs .ui-state-highlight
 	{
 	border: 1px solid #fcefa1;
 	background: #fbf9ee url(images/fbf9ee_40x100_textures_02_glass_55.png)
@@ -407,7 +410,7 @@ div.demo-description {
 	color: #363636;
 }
 
-#widget-docs .ui-state-error,#widget-docs .ui-widget-content #widget-docs .ui-state-error
+#widget-docs .ui-state-error, #widget-docs .ui-widget-content #widget-docs .ui-state-error
 	{
 	border: 1px solid #cd0a0a;
 	background: #fef1ec
@@ -416,24 +419,24 @@ div.demo-description {
 	color: #cd0a0a;
 }
 
-#widget-docs .ui-state-error-text,#widget-docs .ui-widget-content #widget-docs .ui-state-error-text
+#widget-docs .ui-state-error-text, #widget-docs .ui-widget-content #widget-docs .ui-state-error-text
 	{
 	color: #cd0a0a;
 }
 
-#widget-docs .ui-state-disabled,#widget-docs .ui-widget-content #widget-docs .ui-state-disabled
+#widget-docs .ui-state-disabled, #widget-docs .ui-widget-content #widget-docs .ui-state-disabled
 	{
 	opacity: .35;
 	filter: Alpha(Opacity = 35);
 	background-image: none;
 }
 
-#widget-docs .ui-priority-primary,#widget-docs .ui-widget-content #widget-docs .ui-priority-primary
+#widget-docs .ui-priority-primary, #widget-docs .ui-widget-content #widget-docs .ui-priority-primary
 	{
 	font-weight: bold;
 }
 
-#widget-docs .ui-priority-secondary,#widget-docs .ui-widget-content #widget-docs .ui-priority-secondary
+#widget-docs .ui-priority-secondary, #widget-docs .ui-widget-content #widget-docs .ui-priority-secondary
 	{
 	opacity: .7;
 	filter: Alpha(Opacity = 70);
@@ -442,7 +445,7 @@ div.demo-description {
 
 /* Icons
 ----------------------------------*/ /* states and images */
-#demo-frame-wrapper .ui-icon,#widget-docs .ui-icon {
+#demo-frame-wrapper .ui-icon, #widget-docs .ui-icon {
 	width: 16px;
 	height: 16px;
 	background-image: url(images/222222_256x240_icons_icons.png);
@@ -460,7 +463,7 @@ div.demo-description {
 	background-image: url(images/888888_256x240_icons_icons.png);
 }
 
-#widget-docs .ui-state-hover .ui-icon,#widget-docs .ui-state-focus .ui-icon
+#widget-docs .ui-state-hover .ui-icon, #widget-docs .ui-state-focus .ui-icon
 	{
 	background-image: url(images/454545_256x240_icons_icons.png);
 }
@@ -473,7 +476,7 @@ div.demo-description {
 	background-image: url(images/2e83ff_256x240_icons_icons.png);
 }
 
-#widget-docs .ui-state-error .ui-icon,#widget-docs .ui-state-error-text .ui-icon
+#widget-docs .ui-state-error .ui-icon, #widget-docs .ui-state-error-text .ui-icon
 	{
 	background-image: url(images/cd0a0a_256x240_icons_icons.png);
 }
@@ -559,8 +562,8 @@ div.demo-description {
 	border: none;
 }
 
-#widget-docs h2,#widget-docs h3,#widget-docs h4,#widget-docs p,#widget-docs ul,#widget-docs code
-	{
+#widget-docs h2, #widget-docs h3, #widget-docs h4, #widget-docs p,
+	#widget-docs ul, #widget-docs code {
 	margin: 0;
 	padding: 0;
 }
@@ -661,7 +664,7 @@ div.demo-description {
 	border-top: 1px solid #eee;
 }
 
-#widget-docs .param-header h3,#widget-docs .param-header p {
+#widget-docs .param-header h3, #widget-docs .param-header p {
 	margin: 0;
 	float: left;
 }
@@ -713,14 +716,16 @@ div.demo-description {
 	margin: 5px 5px 0 0;
 }
 
-#widget-docs .ui-tabs-nav li a:link,#widget-docs .ui-tabs-nav li a:visited,#widget-docs .ui-tabs-nav li a:hover,#widget-docs .ui-tabs-nav li a:active
+#widget-docs .ui-tabs-nav li a:link, #widget-docs .ui-tabs-nav li a:visited,
+	#widget-docs .ui-tabs-nav li a:hover, #widget-docs .ui-tabs-nav li a:active
 	{
 	font-size: 14px;
 	padding: 4px 1.2em 3px;
 	color: #fff;
 }
 
-#widget-docs .ui-tabs-nav li.ui-tabs-selected a:link,#widget-docs .ui-tabs-nav li.ui-tabs-selected a:visited,#widget-docs .ui-tabs-nav li.ui-tabs-selected a:hover,#widget-docs .ui-tabs-nav li.ui-tabs-selected a:active
+#widget-docs .ui-tabs-nav li.ui-tabs-selected a:link, #widget-docs .ui-tabs-nav li.ui-tabs-selected a:visited,
+	#widget-docs .ui-tabs-nav li.ui-tabs-selected a:hover, #widget-docs .ui-tabs-nav li.ui-tabs-selected a:active
 	{
 	color: #e6820E;
 }
@@ -732,13 +737,13 @@ div.demo-description {
 	color: #000;
 }
 
-#widget-docs .ui-widget-content a:link,#widget-docs .ui-widget-content a:visited
+#widget-docs .ui-widget-content a:link, #widget-docs .ui-widget-content a:visited
 	{
 	color: #1b75bb;
 	text-decoration: none;
 }
 
-#widget-docs .ui-widget-content a:hover,#widget-docs .ui-widget-content a:active
+#widget-docs .ui-widget-content a:hover, #widget-docs .ui-widget-content a:active
 	{
 	color: #0b559b;
 }

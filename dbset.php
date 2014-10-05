@@ -1,4 +1,8 @@
 <?php
+$mysql_host = "localhost";
+$mysql_database = "code.wars";
+$mysql_user = "root";
+$mysql_password = "";
 
 $hostdb = "localhost";
 $db = "feueac_codewars";

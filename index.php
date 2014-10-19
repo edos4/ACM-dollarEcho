@@ -2,6 +2,8 @@
 <!--
 	31: Number of hours on this project. Incrementing EVERY time. :)
 -->
+
+<!--sabi mo mag-edit ako :) -->
 <?php
 error_reporting ( 0 );
 session_start ();

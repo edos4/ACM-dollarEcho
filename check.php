@@ -5,6 +5,7 @@ $user = $_POST ['user'];
 $pass = $_POST ['pass'];
 $pass = md5 ( $pass );
 
+
 if ($user && $pass) {
 	
 	mysql_select_db ( $db ) or die ( "couldnt find db" );

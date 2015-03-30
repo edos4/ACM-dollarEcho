@@ -7,8 +7,6 @@ $pass = md5 ( $pass );
 
 
 if ($user && $pass) {
-	
-	mysql_select_db ( $db ) or die ( "couldnt find db" );
 	$query = mysql_query ( "SELECT * FROM users WHERE Username='$user'" );
 	$numrows = mysql_num_rows ( $query );
 	if ($numrows != 0) {

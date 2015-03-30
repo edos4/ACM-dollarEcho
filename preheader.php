@@ -1,14 +1,14 @@
 <?php
-
+include ('dbset.php');
 /* you SHOULD edit the database details below; fill in your database info */
 
 // this is the info for your database connection
 // ###################################################################################
 // #
-$MYSQL_HOST = "localhost";
-$MYSQL_LOGIN = "root";
-$MYSQL_PASS = "";
-$MYSQL_DB = "feueac_codewars";
+//$MYSQL_HOST = "localhost";
+//$MYSQL_LOGIN = "root";
+//$MYSQL_PASS = "";
+//$MYSQL_DB = "feueac_codewars";
 // #
 // ###################################################################################
 

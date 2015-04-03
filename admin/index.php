@@ -1,7 +1,7 @@
 <?php
 error_reporting ( 0 );
-require_once ('../preheader.php'); // <-- this include file MUST go first before any HTML/output
-include ('../ajaxCRUD.class.php'); // <-- this include file MUST go first before any HTML/output
+include('../preheader.php'); // <-- this include file MUST go first before any HTML/output
+include('../ajaxCRUD.class.php'); // <-- this include file MUST go first before any HTML/output
 ?>
 
 <?php
@@ -33,6 +33,7 @@ else {
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link href="../styles/style.css" rel="stylesheet" type="text/css">
+<script src="jquery.min.js"></script>
 	<title>Admin Page</title> <script type="text/javascript">
         
                 function userFunc(){
@@ -56,28 +57,13 @@ body {
 </style>
 
 		<script src="js/bootstrap.js"></script>
-		<script src="js/bootstrap-button.js"></script>
 		<style type="text/css" title="currentStyle">
 @import "media/css/demo_page.css";
 
 @import "media/css/demo_table_jui.css";
 
-@import "media/css/ColReorder.css";
 </style>
 
-		<script type="text/javascript" charset="utf-8"
-			src="media/js/jquery.dataTables.js"></script>
-		<script type="text/javascript" charset="utf-8"
-			src="media/js/ColReorder.js"></script>
-		<script type="text/javascript" charset="utf-8">
-            $(document).ready( function () {
-                var oTable = $('#example').dataTable( {
-                    "sDom": 'R<"H"lfr>t<"F"ip>',
-                    "bJQueryUI": true,
-                    "sPaginationType": "full_numbers"
-                } );
-            } );
-        </script>
 
 </head>
 <div class="headera">
@@ -90,8 +76,8 @@ body {
 			</td>
 			<td>
                     <?php
-																				echo "<div id='infoa'>Welcome, " . $_SESSION ['log'] . "!<br><a href='../scoreboard.php' style='text-decoration: underline;''>Scoreboard</a><br><a style='text-decoration: underline;' href='../logout.php'>Sign Out</a></div>";
-																				?>
+						echo "<div id='infoa'>Welcome, " . $_SESSION ['log'] . "!<br><a href='../scoreboard.php' style='text-decoration: underline;''>Scoreboard</a><br><a style='text-decoration: underline;' href='../logout.php'>Sign Out</a></div>";
+						?>
                 </td>
 		</tr>
 	</table>
@@ -117,44 +103,26 @@ $tblUsers->addAjaxFilterBoxAllFields ();
 $tblUsers->showTable ();
 
 echo "</div><hr width=\"80%\" /><center><button onclick=\"problemsFunc()\">Problems</button></center><hr width=\"80%\" /><div id=\"problemsdiv\">\n";
-?>
-<div class="span9">
-		<div class="img-polaroid">
-			<table cellpadding="0" cellspacing="0" border="0" class="display"
-				id="example">
-				<thead>
-					<tr>
-						<th></th>
-						<th>Student Number</th>
-						<th>Name</th>
-						<th>Dept./Inst</th>
-						<th>Account Type</th>
-					</tr>
-				</thead>
-				<tbody>
-                                <?php
-																																$query_patient = mysql_query ( "SELECT * from questions" );
-																																while ( $row = mysql_fetch_array ( $query_patient ) ) {
-																																	?>
-                                    <tr>
-                                        <?php echo "<td align='center'><a href = 'staff_chief_complaint.php?id=$row[id]'><img src='img/medical-icon/add-record.png' class='img-icon-medical' title='Add Record for Chief Complaint'></a></td>";?>
-                                        <td align="center"><?php echo $row['question'];?></td>
-						<td align='center'><?php echo $row['testcases'];?></td>
-						<td align="center"><?php echo $row['title'];?></td>
-						<td align="center"><?php echo $row['correctAnswer'];?></td>
 
-					</tr>
-                                <?php
-																																}
-																																?>
-                                </tbody>
-			</table>
-			<br>
-		
-		</div>
-	</div>
+$tblSettings = new ajaxCRUD ( "Questions", "questions", "id" );
+$tblSettings->omitPrimaryKey ();
+$tblSettings->displayAs ( "content", "Content" );
+$tblSettings->displayAs ( "title", "Title" );
+$tblSettings->addAjaxFilterBoxAllFields ();
+$tblSettings->setTextareaHeight ( 'content', 150 );
+
+$tblSettings->setLimit ( 10 );
+
+$tblSettings->showTable ();
+?>
+
+
+
 <?php
-echo "</div><hr width=\"80%\" /><center><button onclick=\"settingsFunc()\">Settings</button></center><hr width=\"80%\" /><div id=\"settingsdiv\">\n";
+echo "</div>
+<hr width=\"80%\" />
+	<center>
+		<button onclick=\"settingsFunc()\">Settings</button></center><hr width=\"80%\" /><div id=\"settingsdiv\">\n";
 
 $tblSettings = new ajaxCRUD ( "Settings", "settings", "id" );
 $tblSettings->omitPrimaryKey ();

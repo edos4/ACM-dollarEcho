@@ -26,10 +26,8 @@ else {
 <head>
 <link href="styles/style.css" rel="stylesheet" type="text/css">
 <link href="styles/ov.css" rel="stylesheet" type="text/css">
-<script type="text/javascript" language="javascript"
-	src="datatables/media/js/jquery.js"></script>
-<script type="text/javascript" language="javascript"
-	src="datatables/media/js/jquery.dataTables.js"></script>
+<script type="text/javascript" language="javascript" src="datatables/media/js/jquery.js"></script>
+<script type="text/javascript" language="javascript" src="datatables/media/js/jquery.dataTables.js"></script>
 <link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
 <link rel="stylesheet" type="text/css" href="styles/bootstrap2.css">
 <title>$echo : Home</title>

@@ -29,27 +29,13 @@ while ( $row2 = mysql_fetch_array ( $contributorsQ ) ) {
 	content="13ca9a17f0b0708a-7f8f5e1b093db001-g1a9f59033d6db468-e"></meta>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>$echo</title>
-<link href='http://fonts.googleapis.com/css?family=Press+Start+2P'
-	rel='stylesheet' type='text/css'>
 <link href="styles/ov.css" rel="stylesheet" type="text/css">
-<script src="jquery.js"></script>
-
-<!-- Add fancyBox -->
-<link rel="stylesheet"
-	href="fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css"
-	media="screen" />
-<script type="text/javascript"
-	src="fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-
 
 </head>
 <body bgcolor="#0182AC">
 
 	<div id="spinner"></div>
-	<script type="text/javascript">// <![CDATA[
-         $(window).load(function() { $("#spinner").fadeOut("slow"); })
-         // ]]>
-      </script>
+
 	<script type="text/javascript">
 		var wf_pbb_object = [
 			{bc:"rgb(1, 130, 172)"},
@@ -94,42 +80,49 @@ while ( $row2 = mysql_fetch_array ( $contributorsQ ) ) {
 		</p>
 	</div>
 
+	<script src="jquery.js"></script>
+
+<!-- Add fancyBox -->
+	<link rel="stylesheet" href="fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+	<script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
 	<script type="text/javascript">
-$(document).ready(function(){
-						   
- $(window).resize(function(){
+		// <![CDATA[
+        $(window).load(function() { $("#spinner").fadeOut("slow"); })
+        // ]]>
+    </script>
 
-  $('.modali').css({
-   position:'absolute',
-   left: ($(window).width() 
-     - $('.modali').outerWidth())/2,
-   top: ($(window).height() 
-     - $('.modali').outerHeight())/2
-  });
+	<script type="text/javascript">
+	$(document).ready(function(){
+							   
+	 	$(window).resize(function(){
 
-  	$(".fancy").fancybox({
-		maxWidth	: 800,
-		maxHeight	: 600,
-		fitToView	: false,
-		width		: '70%',
-		height		: '70%',
-		autoSize	: true,
-		closeClick	: false,
-		openEffect	: 'elastic',
-		closeEffect	: 'elastic'
+	  		$('.modali').css({
+	   			position:'absolute',
+	   			left: ($(window).width() - $('.modali').outerWidth())/2,
+	   			top: ($(window).height() - $('.modali').outerHeight())/2
+	  		});
+
+	  	$(".fancy").fancybox({
+			maxWidth	: 800,
+			maxHeight	: 600,
+			fitToView	: false,
+			width		: '70%',
+			height		: '70%',
+			autoSize	: true,
+			closeClick	: false,
+			openEffect	: 'elastic',
+			closeEffect	: 'elastic'
+		});
+		
+		$('#navi').css({
+	   	   position:'absolute',
+	   	   bottom: '0px',
+		  });	
+		});
+	 
+	 // To initially run the function:
+	 $(window).resize();
 	});
-	
-	$('#navi').css({
-   	   position:'absolute',
-   	   bottom: '0px',
-	  });	
-	});
- 
- // To initially run the function:
- $(window).resize();
-
-});
-
-
-</script>
+	</script>
 </body>
